@@ -9,9 +9,9 @@ class StackList<T> {
         top = element
     }
 
-    fun pop(): T {
-        val current = top!!.value
-        top = top!!.next
+    fun pop(): T? {
+        val current = top?.value
+        top = top?.next
         return current
     }
 

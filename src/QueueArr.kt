@@ -10,7 +10,7 @@ class QueueArr<T>(capacity: Int) {
 
     constructor() : this(100)
 
-    fun offer(value: T): Boolean {
+    fun push(value: T): Boolean {
         if (p1+p2 + 1 == arr1.size) return false
         arr1[p1++] = value
         size++

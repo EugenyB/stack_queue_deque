@@ -14,9 +14,9 @@ class QueueList<T> {
         tail = element
     }
 
-    fun poll(): T {
-        val current = head!!.value
-        head = head!!.next
+    fun poll(): T? {
+        val current = head?.value
+        head = head?.next
         return current
     }
 
